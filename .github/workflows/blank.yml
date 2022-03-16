@@ -34,3 +34,15 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      # Install the Dependencies
+      - name: Install Dependencies
+        run: npm ci
+
+      # Clean the dist directory
+      - name: Clean Distribution Directory
+        run: npm run ci:clean
+
+      # Run the Unit tests
+      - name: Run Unit Tests
+        run: npm run ci:test
