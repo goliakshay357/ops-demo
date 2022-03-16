@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "ci:test": "ng test --watch=false --browsers=ChromeHeadlessCustom --code-coverage"
+    "ci:test": "ng test --watch=false --browsers=ChromeHeadlessCustom --code-coverage",
+    "ci:clean": "rimraf ./dist"
   },
   "private": true,
   "dependencies": {
